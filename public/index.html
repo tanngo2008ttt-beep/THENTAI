@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>THENTAI</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/home.css" />
+
+    <link rel="stylesheet" href="css/theme.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"> THENTAI </a>
+        </div>
+
+        <nav class="nav-links">
+          <a href="index.html">Trang chủ</a>
+          <a href="genres.html">Thể loại</a>
+          <a href="new.html">Truyện mới</a>
+          <a href="completed.html">Hoàn thành</a>
+          <a href="favorites.html">Yêu thích</a>
+        </nav>
+
+        <div class="search-box">
+          <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+
+            <div id="searchSuggest" class="search-suggest"></div>
+          </div>
+
+          <button id="searchButton">Tìm</button>
+
+          <div id="userMenu">
+            <a href="login.html" id="loginLink"> Đăng nhập </a>
+
+            <a href="register.html" id="registerLink"> Đăng ký </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+
+    <section class="banner">
+      <div class="container">
+        <h1>Chào mừng đến với THENTAI</h1>
+
+        <p>Website đọc truyện tranh trực tuyến</p>
+      </div>
+    </section>
+
+    <!-- Manga -->
+
+    <main class="container">
+      <section>
+        <h2>Truyện mới cập nhật</h2>
+
+        <div id="mangaList" class="manga-grid"></div>
+      </section>
+    </main>
+
+    <script src="js/home.js"></script>
+
+    <script src="js/theme.js"></script>
+  </body>
+</html>

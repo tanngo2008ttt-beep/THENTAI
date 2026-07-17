@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tìm kiếm truyện</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/home.css" />
+
+    <link rel="stylesheet" href="css/theme.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"> THENTAI </a>
+        </div>
+
+        <nav>
+          <a href="index.html"> Trang chủ </a>
+        </nav>
+        <div id="userMenu">
+          <a href="login.html" id="loginLink"> Đăng nhập </a>
+
+          <a href="register.html" id="registerLink"> Đăng ký </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Tìm kiếm truyện</h1>
+
+      <div class="search-page">
+        <input
+          type="text"
+          id="keyword"
+          placeholder="Nhập tên truyện hoặc tác giả"
+        />
+
+        <button id="searchBtn">Tìm kiếm</button>
+      </div>
+
+      <div id="searchResult" class="manga-grid"></div>
+    </main>
+
+    <script src="js/search.js"></script>
+
+    <script src="js/theme.js"></script>
+  </body>
+</html>

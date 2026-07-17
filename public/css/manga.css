@@ -1,0 +1,121 @@
+/* ==========================================
+   MANGA DETAIL
+========================================== */
+
+.manga-detail {
+  display: flex;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.cover {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.cover img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.info {
+  flex: 1;
+}
+
+.info h1 {
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.info p {
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: var(--text-secondary);
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.description {
+  margin-top: 30px;
+}
+
+.description h3 {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.description p {
+  color: var(--text-secondary);
+}
+
+/* ==========================================
+   CHAPTER LIST
+========================================== */
+
+.chapter-list {
+  margin: 50px 0;
+}
+
+.chapter-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 20px;
+
+  margin-bottom: 10px;
+
+  background: var(--card);
+
+  color: var(--text);
+
+  border: 1px solid var(--border);
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  box-shadow: 0 2px 8px var(--shadow);
+
+  transition: all 0.25s;
+}
+
+.chapter-item:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.action-buttons {
+  margin: 20px 0;
+}
+
+.btn-read {
+  display: inline-block;
+
+  padding: 12px 24px;
+
+  background: var(--primary);
+
+  color: #fff;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.btn-read:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}

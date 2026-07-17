@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quản lý Pages</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="admin">
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+        <h2>THENTAI</h2>
+
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+
+          <li><a href="manga.html">Manga</a></li>
+
+          <li><a href="chapter.html">Chapter</a></li>
+
+          <li><a href="page.html">Pages</a></li>
+
+          <li><a href="admin-add-manga.html">thể loại</a></li>
+
+          <li><a href="admin-edit-manga.html">sửa truyện</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main -->
+
+      <main class="content">
+        <header class="navbar">
+          <h1>Quản lý Pages</h1>
+        </header>
+
+        <!-- Form -->
+
+        <section class="card">
+          <h2>Upload Pages</h2>
+
+          <form id="pageForm">
+            <select id="manga">
+              <option value="">-- Chọn Manga --</option>
+            </select>
+
+            <select id="chapter">
+              <option value="">-- Chọn Chapter --</option>
+            </select>
+
+            <input type="file" id="images" multiple accept="image/*" />
+
+            <button type="submit">Upload Pages</button>
+          </form>
+        </section>
+
+        <!-- Danh sách -->
+
+        <section class="card">
+          <h2>Danh sách Pages</h2>
+
+          <div id="pageList" class="page-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/page.js"></script>
+  </body>
+</html>

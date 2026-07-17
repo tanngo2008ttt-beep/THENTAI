@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chi tiết Manga</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/manga.css" />
+
+    <link rel="stylesheet" href="css/theme.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"> THENTAI </a>
+        </div>
+
+        <nav>
+          <a href="index.html">Trang chủ</a>
+
+          <a href="#">Thể loại</a>
+
+          <a href="#">Truyện mới</a>
+        </nav>
+        <div id="userMenu">
+          <a href="login.html" id="loginLink"> Đăng nhập </a>
+
+          <a href="register.html" id="registerLink"> Đăng ký </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Manga Detail -->
+
+    <main class="container">
+      <section class="manga-detail">
+        <div class="cover">
+          <img id="cover" src="images/no-cover.png" alt="Cover" />
+        </div>
+
+        <div class="info">
+          <h1 id="title">Tên truyện</h1>
+
+          <div class="action-buttons">
+            <a id="continueReading" class="btn-read" style="display: none">
+              📖 Đọc tiếp
+            </a>
+          </div>
+
+          <button id="btnFavorite">❤️ Theo dõi</button>
+
+          <p>
+            <strong>Tác giả:</strong>
+
+            <span id="author"> Đang cập nhật </span>
+          </p>
+
+          <p>
+            <strong>Họa sĩ:</strong>
+
+            <span id="artist"> Đang cập nhật </span>
+          </p>
+
+          <p>
+            <strong>Trạng thái:</strong>
+
+            <span id="status"> Đang cập nhật </span>
+          </p>
+
+          <div class="description">
+            <h3>Mô tả</h3>
+
+            <p id="description">Đang cập nhật...</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter-list">
+        <h2>Danh sách Chapter</h2>
+
+        <div id="chapters"></div>
+      </section>
+    </main>
+
+    <script src="js/manga.js"></script>
+
+    <script src="js/theme.js"></script>
+  </body>
+</html>

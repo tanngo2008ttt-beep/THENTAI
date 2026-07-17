@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quản lý Chapter</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="admin">
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+        <h2>THENTAI</h2>
+
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+
+          <li><a href="manga.html">Manga</a></li>
+
+          <li><a href="chapter.html">Chapter</a></li>
+
+          <li><a href="page.html">Pages</a></li>
+
+          <li><a href="admin-add-manga.html">thể loại</a></li>
+
+          <li><a href="admin-edit-manga.html">sửa truyện</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main -->
+
+      <main class="content">
+        <header class="navbar">
+          <h1>Quản lý Chapter</h1>
+        </header>
+
+        <!-- Form -->
+
+        <section class="card">
+          <h2>Thêm Chapter</h2>
+
+          <form id="chapterForm">
+            <select id="manga">
+              <option value="">-- Chọn Manga --</option>
+            </select>
+
+            <input
+              type="number"
+              id="chapterNumber"
+              placeholder="Số Chapter"
+              required
+            />
+
+            <input type="text" id="chapterTitle" placeholder="Tên Chapter" />
+
+            <button type="submit">Thêm Chapter</button>
+          </form>
+        </section>
+
+        <!-- Danh sách -->
+
+        <section class="card">
+          <h2>Danh sách Chapter</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+
+                <th>Manga</th>
+
+                <th>Chapter</th>
+
+                <th>Tiêu đề</th>
+
+                <th>Thao tác</th>
+              </tr>
+            </thead>
+
+            <tbody id="chapterTable"></tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/chapter.js"></script>
+  </body>
+</html>

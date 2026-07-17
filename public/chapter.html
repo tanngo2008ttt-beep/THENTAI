@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Đọc truyện</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/chapter.css" />
+
+    <link rel="stylesheet" href="css/theme.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"> THENTAI </a>
+          <div id="userMenu">
+            <a href="login.html" id="loginLink"> Đăng nhập </a>
+
+            <a href="register.html" id="registerLink"> Đăng ký </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Reader -->
+
+    <main class="container">
+      <section class="reader-header">
+        <h1 id="chapterTitle">Đang tải...</h1>
+
+        <div class="reader-actions">
+          <button id="prevChapter">← Chapter trước</button>
+
+          <select id="chapterSelect">
+            <option>Chọn Chapter</option>
+          </select>
+
+          <a href="#" id="backToManga"> Về trang truyện </a>
+
+          <button id="nextChapter">Chapter sau →</button>
+        </div>
+      </section>
+
+      <section id="readerImages" class="reader-images"></section>
+      <button id="backTop">↑</button>
+    </main>
+
+    <!-- ========================= -->
+    <!-- COMMENT -->
+    <!-- ========================= -->
+
+    <section id="comments">
+      <h2>Bình luận</h2>
+
+      <textarea id="commentContent" placeholder="Viết bình luận..."></textarea>
+
+      <br />
+
+      <button id="btnComment">Gửi bình luận</button>
+
+      <hr />
+
+      <div id="commentList">Chưa có bình luận.</div>
+    </section>
+
+    <script src="js/chapter.js"></script>
+
+    <script src="js/theme.js"></script>
+  </body>
+</html>

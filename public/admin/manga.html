@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quản lý Manga</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="admin">
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+        <h2>THENTAI</h2>
+
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+
+          <li><a href="manga.html">Manga</a></li>
+
+          <li><a href="chapter.html">Chapter</a></li>
+
+          <li><a href="page.html">Pages</a></li>
+
+          <li><a href="admin-add-manga.html">thể loại</a></li>
+
+          <li><a href="admin-edit-manga.html">sửa truyện</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main -->
+
+      <main class="content">
+        <header class="navbar">
+          <h1>Quản lý Manga</h1>
+        </header>
+
+        <!-- Form -->
+
+        <section class="card">
+          <h2>Thêm Manga</h2>
+
+          <form id="mangaForm">
+            <input type="text" id="title" placeholder="Tên truyện" required />
+
+            <input type="text" id="slug" placeholder="Slug" />
+
+            <input type="text" id="author" placeholder="Tác giả" />
+
+            <input type="text" id="artist" placeholder="Họa sĩ" />
+
+            <textarea id="description" placeholder="Mô tả"></textarea>
+
+            <select id="status">
+              <option>Đang tiến hành</option>
+
+              <option>Hoàn thành</option>
+
+              <option>Tạm ngưng</option>
+            </select>
+
+            <input type="file" id="cover" />
+
+            <button type="submit">Thêm Manga</button>
+          </form>
+        </section>
+
+        <!-- Danh sách -->
+
+        <section class="card">
+          <h2>Danh sách Manga</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+
+                <th>Ảnh</th>
+
+                <th>Tên</th>
+
+                <th>Tác giả</th>
+
+                <th>Trạng thái</th>
+
+                <th>Thao tác</th>
+              </tr>
+            </thead>
+
+            <tbody id="mangaTable"></tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/manga.js"></script>
+  </body>
+</html>
